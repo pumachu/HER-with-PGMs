@@ -1,0 +1,43 @@
+ SYSTEM =  flat surface            
+
+ Startparameter for this Run:
+   NWRITE =      2;   LPETIM=F    write-flag & timer
+   ISTART =      0    job   : 0-new  1-cont  2-samecut
+#  ICHARG =     11
+#  LCHARG =      F
+#  NFIRST =      1
+   ISYM   =      0
+   ISPIN  =      2
+   ISIF   =      0
+#  RWIGS  =    1.312
+   NPAR   =      6         ! Recommended to be SQRT of total no. of cores employed for the job.
+#  MAGMOM =      3
+
+ Electronic Relaxation 1
+   ENCUT  =  400.00 eV 
+   NELM   =    50;   
+   NELMIN =     4
+   EDIFFG =   -0.02
+   EDIFF  =   1E-05   stopping-criterion for ELM
+   PREC   =    High
+
+ Ionic Relaxation
+   NSW    =    500    number of steps for IOM
+   IBRION =      2    ionic relax:  0-MD    1-quasi-New    2-CG
+
+ DOS related values:
+   ISMEAR = 1; SIGMA = 0.2
+#  ISMEAR = -5 ; for DOS
+
+ Electro/nic Relaxation 2
+   IALGO  =     38    algorithm
+   LDIAG  =      T    sub-space diagonalisation
+   LREAL  =      Auto
+   LELF   =      F    
+   LWAVE  =      T
+#  LORBIT =     11
+#  NBANDS =     144
+#  LPARD  =      F
+#  IBAND  =      6
+#  NGX  =  40; NGY  =  40; NGZ  = 100
+#  NGXF = 180; NGYF =  60; NGZF = 200
