@@ -22,3 +22,17 @@ d. Equilibration at 300K (equil_at_300/)
 ```
 ![image](https://user-images.githubusercontent.com/72870425/222903797-299df748-d22f-48cb-b8e0-7b9a60b2bf69.png)
 **Figure 3.** The thermal process of the “melt & quench” procedure. Three disordered slabs are constructed by quenching at different time steps from 6000 K to 300 K.
+
+## OUTPUTS
+This folder contains stuctures (CONTCAR) of all slabs (with and without H adsorption) considered in this work. For the nomenclature, please refer to the supporting information of the work. Threre are four different types of slabs:
+```
+a. Smooth primitive (smooth_primitive)
+b. Smooth vacancy (smooth_vacancy)
+c. Smooth step (smooth_step)
+d. Disordered (amorphous)
+```
+In each folder, there are two subfolders:
+```
+a. Slab without H adsorbate (wo_H)
+b. Slab with H adsorbate (w_H)
+```
